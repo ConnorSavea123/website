@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* CSS Variables */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --Light: #fff;
+    --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #000000;
+    margin: 50px 50px;
+    line-height: 1.4em;
+}
+
+.nav ul {
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.nav a {
+  background: #000000;
+  
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.3fr 0.7fr 0.7fr 0.3fr;
+  grid-template-areas: "nav nav nav nav" "pic1 pic2 pic3 pic4" "pic5 pic6 pic7 pic8" "munch munch munch munch";
+  height: 90vh;
+  margin: 5em;
+}
+
+section.nav {
+ grid-area: nav;
+ background: #000000;
+ text-align: center;
+}
+/*
+section.pic {
+  grid-area: pic;
+  background: #ffffff;
+  background-image: url('cath.png');
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+*/
+section.logo {
+  grid-area: logo;
+  background-color: #000000;
+  background-image: url('_logo.png');
+  object-fit: cover;
+  background-position: center;
+  background-repeat: none;
+  background-size: 100% 100%;
+  position: relative;
+  border-radius: 50% 50%;
+
+}
+
+section.pic1 {
+grid-area: pic1;
+background-image: url('images/bucks.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic2 {
+grid-area: pic2;
+background-image:url('images/allen.jfif') ;
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic3 {
+grid-area: pic3;
+background-image: url('images/lebron.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic4 {
+grid-area: pic4;
+background-image: url('images/iconic.jfif');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic5 {
+grid-area: pic5;
+background-image: url('images/block.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic6 {
+grid-area: pic6;
+background-image: url('images/Bulls.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic7 {
+grid-area: pic7;
+background-image: url('images/goat.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+section.pic8 {
+grid-area: pic8;
+background-image: url('images/allstar.jpg');
+object-fit: cover;
+background-position: center;
+background-repeat: none;
+background-size: 100% 100%;
+position: relative;
+border: 10px solid white;
+border-radius: 20px 20px 20px 20px;
+}
+
+
+
+section.munch {
+grid-area: munch;
+background: linear-gradient(to bottom, #adb3ae 0%,#88b88b 100%) ;
+}
+
+
